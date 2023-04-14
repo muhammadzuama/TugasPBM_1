@@ -123,9 +123,9 @@ class LoginView extends StatelessWidget {
                             EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                         backgroundColor: GlobalColors.buttonColor),
                     onPressed: () {
-                      String username =
-                          'admin'; // Mengambil nilai inputan email
-                      String password = '123';
+                      print(username);
+                      print(password);
+
                       if (usernameController.text == username &&
                           passwordController.text == password) {
                         Navigator.push(
@@ -165,10 +165,10 @@ class LoginView extends StatelessWidget {
                                   ],
                                 ));
                       }
-                      print(
-                          'username: $username'); // Menampilkan nilai inputan email pada console
-                      print(
-                          'Password: $password'); // Menampilkan nilai inputan password pada console
+                      // print(
+                      //     'username: $username'); // Menampilkan nilai inputan email pada console
+                      // print(
+                      //     'Password: $password'); // Menampilkan nilai inputan password pada console
                     },
                     child: Text(
                       "LOGIN",

@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:sehatin/utils/global.colors.dart';
 import 'package:sehatin/view/login.view.dart';
 
-List<String> inputdata = [];
+String username = "";
+String password = "";
 final TextEditingController usernameController = TextEditingController();
 final TextEditingController passwordController = TextEditingController();
 final TextEditingController konfirmpasswordController = TextEditingController();
@@ -125,11 +126,11 @@ class Register extends StatelessWidget {
                                 horizontal: 30, vertical: 15),
                             backgroundColor: GlobalColors.buttonColor),
                         onPressed: () {
-                          String username = usernameController
+                          String inputusername = usernameController
                               .text; // Mengambil nilai inputan email
-                          String password = passwordController.text;
+                          String inputpassword = passwordController.text;
                           String password2 = konfirmpasswordController.text;
-                          if (password != password2) {
+                          if (inputpassword != password2) {
                             showDialog(
                                 context: context,
                                 builder: (context) => AlertDialog(
@@ -146,6 +147,8 @@ class Register extends StatelessWidget {
                                       ],
                                     ));
                           } else {
+                            username = inputusername;
+                            password = inputpassword;
                             print("Email: $username");
                             print("Password: $password");
                             Navigator.push(
