@@ -19,7 +19,7 @@ class SplashView extends StatelessWidget {
       backgroundColor: GlobalColors.mainColor,
       body: const Center(
         child: Image(
-          image: AssetImage('images/logo2.png'),
+          image: AssetImage('images/logo3.png'),
           width: 250,
           height: 250,
         ),
