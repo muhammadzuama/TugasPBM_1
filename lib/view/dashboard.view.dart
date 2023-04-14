@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sehatin/utils/global.colors.dart';
+import 'package:sehatin/view/register.view.dart';
 
 final TextEditingController BeratController = TextEditingController();
 final TextEditingController TinggiConstroller = TextEditingController();
@@ -18,7 +19,7 @@ class BmiView extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Welcome Admin ',
+                'Welcome $username',
                 style: TextStyle(
                     color: GlobalColors.textColor,
                     fontSize: 30,

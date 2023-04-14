@@ -39,7 +39,7 @@ class Register extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    'Email ',
+                    'Username ',
                     style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                   ),
                   SizedBox(height: 10),
@@ -52,7 +52,7 @@ class Register extends StatelessWidget {
                       controller: usernameController,
                       decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: "Masukkan Email ",
+                          hintText: "Masukkan Username ",
                           hintStyle: TextStyle(
                               fontSize: 15,
                               color: Color.fromARGB(255, 168, 168, 168)
@@ -149,7 +149,7 @@ class Register extends StatelessWidget {
                           } else {
                             username = inputusername;
                             password = inputpassword;
-                            print("Email: $username");
+                            print("Username: $username");
                             print("Password: $password");
                             Navigator.push(
                               context,
