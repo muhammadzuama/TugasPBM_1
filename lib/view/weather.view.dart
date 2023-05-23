@@ -85,7 +85,7 @@ class _WeatherState extends State<Weather> {
           ),
           Expanded(
               child: Padding(
-            padding: EdgeInsets.all(0.0),
+            padding: EdgeInsets.all(10.0),
             child: ListView(
               children: <Widget>[
                 ListTile(
