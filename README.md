@@ -1,4 +1,4 @@
-# FarmNews
+# getFarm
 
 Tim pengembang
 1. Muhammad Zuama Al Amin  NIM 212410102032
