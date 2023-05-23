@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sehatin/nav/nav.view.dart';
 import 'package:sehatin/utils/global.colors.dart';
-import 'package:sehatin/view/dashboard.view.dart';
 import 'package:sehatin/view/register.view.dart';
 
 final TextEditingController usernameController = TextEditingController();
@@ -130,7 +130,9 @@ class LoginView extends StatelessWidget {
                           passwordController.text == password) {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => BmiView()),
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  BottomNavigationBarExampleApp()),
                         );
                       } else if (usernameController.text == '' ||
                           passwordController.text == '') {
@@ -185,7 +187,7 @@ class LoginView extends StatelessWidget {
                         context,
                         MaterialPageRoute(builder: (context) => Register()),
                       );
-                      ;
+                      
                     },
                     child: Text("Sign Up",
                         style: TextStyle(fontWeight: FontWeight.bold)),
