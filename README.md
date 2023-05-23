@@ -1,9 +1,9 @@
 # FarmNews
 
 Tim pengembang
-Muhammad Zuama Al Amin  NIM 212410102032
-Galang Prasanjaya       NIM 212410102080
-Alvito Dwinova Permana  NIM 212410102098
+1. Muhammad Zuama Al Amin  NIM 212410102032
+2. Galang Prasanjaya       NIM 212410102080
+3. Alvito Dwinova Permana  NIM 212410102098
 
 Fitur Aplikasi :
 1. melihat cuaca di wilayah jember.
