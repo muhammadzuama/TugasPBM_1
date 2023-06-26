@@ -21,7 +21,7 @@ class _WeatherState extends State<Weather> {
 
   Future getWeather() async {
     http.Response response = await http.get(Uri.parse(
-        'http://api.weatherapi.com/v1/current.json?key=d9bf068efe4e4fbab6a104342232305&q=jember'));
+        'http://api.weatherapi.com/v1/current.json?key=d9bf068efe4e4fbab6a104342232305&q=london'));
 
     var result = jsonDecode(response.body);
 

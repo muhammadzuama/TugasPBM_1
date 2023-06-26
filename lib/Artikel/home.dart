@@ -28,7 +28,8 @@ class _ArikelState extends State<Arikel> {
             List<ArticleModel> articles = snapshot.data!;
             return ListView.builder(
               itemCount: articles.length,
-              itemBuilder: (context, index) => customListTitle(articles[index]),
+              itemBuilder: (context, index) =>
+                  customListTitle(articles[index], context),
             );
           } else if (snapshot.hasError) {
             return Center(

@@ -1,9 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:sehatin/Artikel/Page/halaman.detail.artikel.dart';
 import 'package:sehatin/Artikel/model/articel.model.dart';
 
-Widget customListTitle(ArticleModel artikel) {
+Widget customListTitle(ArticleModel artikel, BuildContext context) {
   return InkWell(
-      onTap: () {}, // Ganti dengan widget anak yang sesuai
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => ArticlePage(
+                    article: artikel,
+                  )),
+        );
+      }, // Ganti dengan widget anak yang sesuai
 
       child: Container(
         margin: EdgeInsets.all(12.0),
